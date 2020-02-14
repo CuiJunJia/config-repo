@@ -13,6 +13,12 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
   application:
     name: order
+  #配置RabbitMQ  之前没有报错是因为用的是默认的配置
+  rabbitmq:
+    host: loaclhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
@@ -23,4 +29,4 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 env:
-  dev1
+  dev
