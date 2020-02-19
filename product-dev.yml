@@ -4,6 +4,12 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+  #配置RabbitMQ  之前没有报错是因为用的是默认的配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   mvc:
     static-path-pattern: /static/**
 mybatis:
