@@ -15,7 +15,6 @@ spring:
     #Redis服务器连接端口
     port: 6379
     #Redis服务器连接密码（默认密码为空）
-    password:
   mvc:
     static-path-pattern: /static/**
 mybatis:
