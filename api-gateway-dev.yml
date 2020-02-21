@@ -1,0 +1,13 @@
+#自定义路由
+zuul:
+  routes:
+   myProduct:
+     path: /myProduct/**
+     serviceId: product
+     #通过request 获取到敏感 字段 比如cookie
+     #sensitiveHeaders:
+
+  #禁止路由 某个路径 或多个
+  #ignored-patterns:
+   # - /**/product/listForOrder
+
